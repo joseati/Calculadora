@@ -51,6 +51,7 @@ let calculate = () =>{
 
       }
       else{
+        (!operation)
 
       }
 
