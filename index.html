@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Calculadora</title>
+    <!-- link bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+    <!-- Link style propio -->
+    <link rel="stylesheet" href="./style/css/style.css">
+
+<!-- link Js -->
+<script type="text/javascript"  src="./js/calculator.js" charset="UTF-8"></script>
+
+  </head>
+  <!-- Body -->
+  <body class="container-fluid row">
+    
+    <!-- Main -->
+    <main class="col-12"> 
+      
+      <div class="col-12 d-flex flex-row justify-content-center align-items-center">
+        <div class="calculadora ">
+          <h1 class="m-0 text-center ">Calc f(x)</h1>
+        </div>
+      </div>
+      <div class="col-12 col-xl-4 offset-xl-4 text-center d-felx flex-row">
+        <div class="screen">
+          <input type ="text" value="" onclick="init()" class="active"  id="screen"></input>
+        </div>
+      </div>
+      <div class="col-12 col-xl-4 offset-xl-4 text-center d-felx flex-row">
+        <div class="back">
+          <input type="button"  value="1" onclick="addSymbol('1')">
+          <input type = "button" onclick="addSymbol('2')" value="2">
+          <input type = "button" onclick="addSymbol('3')" value="3">
+          <input type = "button"onclick="addSymbol('+')" value="+">
+                
+        </div>
+      </div>
+      <div class="col-4"></div>
+      <div class="col-12 col-xl-4 offset-xl-4 text-center d-felx flex-row">
+        <div class="back">
+          <input type="button" value="4" onclick="addSymbol('4')">
+          <input type = "button" onclick="addSymbol('5')" value="5">
+          <input type = "button" onclick="addSymbol('3')" value="6">
+          <input type = "button"onclick="addSymbol('-')" value="-">
+                </input>
+        </div>
+      </div>
+      <div class="col-4 "></div>
+      <div class="col-12 col-xl-4 offset-xl-4 text-center d-felx flex-row">
+        <div class="back">
+          <input type="button" value="7" onclick="addSymbol('7')">
+          <input type = "button" onclick="addSymbol('8')" value="8">
+          <input type = "button" onclick="addSymbol('9')" value="9">
+          <input type = "button" onclick="addSymbol('*')" value="*">
+                </input>
+        </div>
+      </div>
+      <div class="col-4"></div>
+      <div class="col-12 col-xl-4 offset-xl-4 text-center d-felx flex-row">
+        <div class="back pb-3">
+          <input type="button" value="=" onclick="calculate()">
+          <input type = "button" onclick="clearScreen()" value="C">
+          <input type = "button" onclick="addSymbol('0')" value="0">
+          <input type = "button"onclick="addSymbol('/')" value="/">
+                </input>
+        </div>
+      </div>
+      <div class="col-4"></div>
+  
+
+      
+    </main>
+   
+
+
+
+
+    <!-- Scrip de bootstraap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+  </body>
+</html>

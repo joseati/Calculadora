@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap");
+@keyframes movimiento {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 100% 100%;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  height: 100vh;
+  background-image: linear-gradient(to bottom right, rgba(28, 20, 149, 0.737254902) 0%, rgba(5, 1, 216, 0.8117647059) 20%, rgba(34, 0, 135, 0.7921568627) 30%, #5e4e92 40%, #E57191 60%, #D96DBA 80%);
+  background-size: 200% 200%;
+  animation: movimiento 10s linear infinite 1s alternate;
+}
+
+.calculadora {
+  margin: 10rem 0rem 0 0rem;
+  width: 20%;
+}
+.calculadora h1 {
+  border-radius: 10% 10% 0 0;
+  color: rgba(255, 255, 255, 0.304);
+  background-color: transparent;
+}
+
+.screen {
+  border-radius: 10% 10% 0 0;
+  background-color: #636a6a;
+  padding: 1rem 0;
+  margin: 0 10rem;
+}
+
+.back, .back1 {
+  background-color: #636a6a;
+  margin: 0 10rem;
+}
+
+.back1 {
+  border-radius: 0 0 10% 10%;
+}
+
+input {
+  padding: 1rem;
+  border-radius: 7%;
+  background-color: rgba(128, 128, 128, 0.908);
+}
+
+.active:active {
+  background-color: rgba(255, 255, 255, 0.662);
+  border-radius: 0%;
+  border: 1px solid white;
+}
+
+input:hover {
+  background-color: transparent;
+  border: 1px solid #6C3F90;
+  color: white;
+}
+
+input:active {
+  background-color: gray;
+  border-radius: 50%;
+  border-color: 1px solid gray;
+}
+
+@media screen and (width <= 1640px) {
+  .screen {
+    margin-bottom: 1rem;
+    background-color: transparent;
+    padding: 0;
+    margin: 1rem;
+  }
+  .back, .back1 {
+    background-color: transparent;
+    margin: 0;
+  }
+}
+@media screen and (width <= 400px) {
+  .calculadora {
+    margin: 0;
+    width: 50%;
+  }
+  .back, .back1 {
+    background-color: transparent;
+    margin: 0;
+  }
+}/*# sourceMappingURL=style.css.map */
